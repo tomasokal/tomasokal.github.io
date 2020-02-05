@@ -1,0 +1,91 @@
+baseURL = "tomasokal.github.io"
+languageCode = "en-us"
+title = "Tomas Okal"
+theme = "avicenna"
+googleAnalytics = "UA-1234-6"
+timeout=3000
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+  subtitle= "Research Analyst "
+  interests="Linear Modeling, Time-Series Analysis, Machine Learning, R, Open-Source Software, Fantasy Football"
+  cv_name= "tomasokal.pdf"
+  #blog = "google.com"
+
+[[params.affilation]]
+  name = "NORC at the University of Chicago"
+  position = "Research Analyst"
+  contact = "tomas.okal@gmail.com"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/tomasokal"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "twitter"
+  url = "https://twitter.com/tomasokal"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "linkedin"
+  url = "https://www.linkedin.com/in/tomas-okal-36049b143/"
+
+[[params.introduction.paragraph]]
+  text="""
+  I am a Research Analyst at NORC at the University of Chicago. 
+  Previously, I was a Research Assistant at the University of Georgia.
+  I obtained an M.A. in Political Science and International Relations at the School of Public and International Affairs at the University of Georgia where I also finished my B.A. in International Relations and B.A. in Spanish.
+  """
+  
+[[params.introduction.paragraph]]
+  text=""" 
+  I am passionate about statistics, data visualization, programming, and machine learning. 
+  During my career, I have worked on many projects combining survey analysis, data visualization, machine learning, linear modeling, and many other tools of research and analysis.
+  I have also gotten a number of grants and awards to work on and contribute to open-source alternatives in statistical analysis.
+  """
+
+[[params.projects]]
+
+	[[params.projects.project]]
+		name = "{phackr}"
+		description  = "R package to loop through regression testing of demographics in survey data."
+		project_page = "https://github.com/willdebras/phackr"
+		code_link = "https://github.com/willdebras/phackr"
+  
+	[[params.projects.project]]
+		name = "{rtist}"
+		description  = "R package to generate color palettes from famous artists and paintings."
+		project_page = "https://github.com/tomasokal/rtist"
+		code_link = "https://github.com/tomasokal/rtist"
+
+[[params.conferences]]
+  
+	[[params.conferences.conference]]
+		name = "MPSA 2020"
+		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
+		conference_page = "https://chicago2019.satrdays.org/"
+		code_link = ""
+		blog_link = ""
+		
+	[[params.conferences.conference]]
+		name = "MAPOR 2019"
+		description  = "How the Urban/Rural Political Divide Plays Out in America’s Suburbs"
+		conference_page = "http://www.mapor.org/2019-annual-conference/"
+		code_link = ""
+		blog_link = ""
+		
+	[[params.conferences.conference]]
+		name = "MAPOR 2019"
+		description  = "Mobilizing the Poor: The Conditional Impacts of Clientelism and Electoral Competition on Turnout"
+		conference_page = "http://www.mapor.org/2019-annual-conference/"
+		code_link = ""
+		blog_link = ""
+		
+	[[params.conferences.conference]]
+		name = "satRday Chicago 2019"
+		description  = "Presented on utilizing R for Fantasy Football Analysis"
+		conference_page = "https://chicago2019.satrdays.org/"
+		code_link = ""
+		blog_link = ""
