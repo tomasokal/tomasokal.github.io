@@ -1,4 +1,4 @@
-baseURL = "tomasokal.github.io"
+baseURL = "https://tomasokal.github.io"
 languageCode = "en-us"
 title = "Tomas Okal"
 theme = "avicenna"
