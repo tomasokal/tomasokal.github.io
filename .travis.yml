@@ -2,7 +2,7 @@ language: r
 cache: packages
 branches:
     only:
-        - source
+        - tomasokal-source
 r_github_packages:
     - rstudio/blogdown
 
