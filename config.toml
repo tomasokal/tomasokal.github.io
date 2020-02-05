@@ -65,7 +65,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 	[[params.conferences.conference]]
 		name = "MPSA 2020"
 		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
-		conference_page = "https://chicago2019.satrdays.org/"
+		conference_page = "https://www.mpsanet.org/conference"
 		code_link = ""
 		blog_link = ""
 		
