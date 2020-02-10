@@ -61,12 +61,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[params.conferences]]
   
-	[[params.conferences.conference]]
-		name = "MPSA 2020"
-		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
-		conference_page = "https://www.mpsanet.org/conference"
-		code_link = ""
-		blog_link = ""
+#	[[params.conferences.conference]]
+#		name = "MPSA 2020"
+#		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
+#		conference_page = "https://www.mpsanet.org/conference"
+#		code_link = ""
+#		blog_link = ""
 		
 	[[params.conferences.conference]]
 		name = "MAPOR 2019"
