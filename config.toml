@@ -8,7 +8,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
   subtitle= "Research Analyst "
   interests="Linear Modeling, Time-Series Analysis, Machine Learning, R, Open-Source Software, Fantasy Football"
-  cv_name= "tomasokal.pdf"
+  cv_name= "/tomasokal.pdf"
   posts="https://github.com/tomasokal/posts/"
 
 [[params.affilation]]
@@ -35,7 +35,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   text="""
   I am a Research Analyst at NORC at the University of Chicago. 
   Previously, I was a Research Assistant at the University of Georgia.
-  I obtained an M.A. in Political Science and International Relations at the School of Public and International Affairs at the University of Georgia where I also finished my B.A. in International Relations and B.A. in Spanish.
+  I obtained a M.A. in Political Science and International Relations at the School of Public and International Affairs at the University of Georgia where I also finished my B.A. in International Relations and B.A. in Spanish.
   """
   
 [[params.introduction.paragraph]]
