@@ -8,7 +8,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
   subtitle= "Research Analyst "
   interests="Linear Modeling, Time-Series Analysis, Machine Learning, R, Open-Source Software, Fantasy Football"
-  cv_name= "/tomasokal.pdf"
+  cv_name= "tomasokal.pdf"
   posts="https://github.com/tomasokal/posts/"
 
 [[params.affilation]]
