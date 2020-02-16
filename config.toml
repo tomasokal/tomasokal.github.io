@@ -9,7 +9,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   subtitle= "Research Analyst "
   interests="Linear Modeling, Time-Series Analysis, Machine Learning, R, Open-Source Software, Fantasy Football"
   cv_name= "tomasokal.pdf"
-  #blog = "google.com"
+  posts="https://github.com/tomasokal/posts/"
 
 [[params.affilation]]
   name = "NORC at the University of Chicago"
@@ -58,16 +58,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 		description  = "R package to generate color palettes from famous artists and paintings."
 		project_page = "https://github.com/tomasokal/rtist"
 		code_link = "https://github.com/tomasokal/rtist"
-
-[[params.conferences]]
-  
-#	[[params.conferences.conference]]
-#		name = "MPSA 2020"
-#		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
-#		conference_page = "https://www.mpsanet.org/conference"
-#		code_link = ""
-#		blog_link = ""
 		
+[[params.conferences]]
+
+	[[params.conferences.conference]]
+		name = "MPSA 2020"
+		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
+		conference_page = "https://www.mpsanet.org/conference"
+		code_link = ""
+		blog_link = ""
+
 	[[params.conferences.conference]]
 		name = "MAPOR 2019"
 		description  = "How the Urban/Rural Political Divide Plays Out in America’s Suburbs"

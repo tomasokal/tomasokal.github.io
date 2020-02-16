@@ -1,0 +1,35 @@
+<div class="introduction">
+	{{ with .Site.Params.conferences }}
+	<h4>Conferences</h4>
+	<ul>
+		{{- range $index, $conferences_map := $.Site.Params.conferences -}}
+
+		{{ range $elem_index, $conference := $conferences_map.conference }}
+		<li>
+			<a href="{{ $conference.conference_page }}" class="conference"> {{ $conference.name }}</a>
+
+			{{ if or ($conference.code_link) ($conference.blog_link) }}
+			<span class="code_blog">
+				{{ with $conference.code_link }}
+				[<a href="{{ . }}">code</a>]
+				{{ end }}
+
+				{{ with $conference.blog_link }}
+				[<a href="{{ . }}">blog</a>]
+				{{ end }}
+			</span>
+			{{ end }}
+
+			{{ with $conference.description }}
+			<span class="conference_description">
+				{{ . | markdownify}}
+			</span>
+			{{ end }}
+
+		</li>
+		{{ end }}
+
+		{{- end -}}
+	</ul>
+	{{ end }}
+</div>
