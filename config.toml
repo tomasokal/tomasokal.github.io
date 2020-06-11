@@ -7,7 +7,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   subtitle= "Research Analyst "
-  interests="Linear Modeling, Time-Series Analysis, Machine Learning, R, Open-Source Software, Fantasy Football"
+  interests="Linear Modeling, Time-Series Analysis, Multi-Level Models, Bayesian Analysis, Survey Analysis, R, Open-Source Software, Sports Analytics"
   cv_name= "tomasokal.pdf"
   posts="https://github.com/tomasokal/posts/"
 
@@ -40,18 +40,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   
 [[params.introduction.paragraph]]
   text=""" 
-  I am passionate about statistics, data visualization, programming, and machine learning. 
-  During my career, I have worked on many projects combining survey analysis, data visualization, machine learning, linear modeling, and many other tools of research and analysis.
-  I have also gotten a number of grants and awards to work on and contribute to open-source alternatives in statistical analysis.
+  I work on survey data analytics using aspects of statistics, data vizualization, programming, and machine learning. I have employed these skills and more on projects such as [AP VoteCast](https://www.norc.org/Research/Projects/Pages/ap-votecast.aspx) and the [COVID Impact Study](https://www.norc.org/Research/Projects/Pages/covid-impact-survey.aspx). 
+  During my academic and professional career, I have worked on many projects combining survey analysis, linear modeling, time series analysis, etc.
+  In addition to producing and contributing to open source software, I have gotten a number of grants and awards to develop R packages for data visualization and statistical analysis.  
   """
 
 [[params.projects]]
-
-	[[params.projects.project]]
-		name = "{phackr}"
-		description  = "R package to loop through regression testing of demographics in survey data."
-		project_page = "https://github.com/willdebras/phackr"
-		code_link = "https://github.com/willdebras/phackr"
   
 	[[params.projects.project]]
 		name = "{rtist}"
@@ -59,25 +53,51 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 		project_page = "https://CRAN.R-project.org/package=rtist"
 		code_link = "https://github.com/tomasokal/rtist"
 		
+	[[params.projects.project]]
+		name = "{phackr}"
+		description  = "R package to loop through regression testing of demographics in survey data."
+		project_page = "https://github.com/willdebras/phackr"
+		code_link = "https://github.com/willdebras/phackr"
+		
+	[[params.projects.project]]
+		name = "{RSlovakia}"
+		description  = "R package that provides spatial data from Slovakia."
+		project_page = "https://github.com/tomasokal/RSlovakia"
+		code_link = "https://github.com/tomasokal/RSlovakia"
+		
 [[params.conferences]]
 
 	[[params.conferences.conference]]
-		name = "MPSA 2020"
-		description  = "Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data"
+		name = "satRday Chicago 2020 (Virtual)"
+		description  = "Attended as participant."
+		conference_page = "https://chicago2020.satrdays.org/"
+		code_link = ""
+		blog_link = ""
+		
+	[[params.conferences.conference]]
+		name = "Chicago R Collaborative 2020 (Virtual)"
+		description  = "Attended as participant."
+		conference_page = "https://chircollab.github.io/#page-top"
+		code_link = ""
+		blog_link = ""
+
+	[[params.conferences.conference]]
+		name = "MPSA 2020 (Cancelled)"
+		description  = "Was to present 'Evaluating the Impact of Scaled Design Weights in Multilevel Models with Complex Political Survey Data'"
 		conference_page = "https://www.mpsanet.org/conference"
 		code_link = ""
 		blog_link = ""
 
 	[[params.conferences.conference]]
 		name = "MAPOR 2019"
-		description  = "How the Urban/Rural Political Divide Plays Out in America’s Suburbs"
+		description  = "Presented 'How the Urban/Rural Political Divide Plays Out in America’s Suburbs'"
 		conference_page = "http://www.mapor.org/2019-annual-conference/"
 		code_link = ""
 		blog_link = ""
 		
 	[[params.conferences.conference]]
 		name = "MAPOR 2019"
-		description  = "Mobilizing the Poor: The Conditional Impacts of Clientelism and Electoral Competition on Turnout"
+		description  = "Presented 'Mobilizing the Poor: The Conditional Impacts of Clientelism and Electoral Competition on Turnout'"		
 		conference_page = "http://www.mapor.org/2019-annual-conference/"
 		code_link = ""
 		blog_link = ""
