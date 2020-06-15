@@ -52,6 +52,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 		description  = "R package to generate color palettes from famous artists and paintings."
 		project_page = "https://CRAN.R-project.org/package=rtist"
 		code_link = "https://github.com/tomasokal/rtist"
+
+	[[params.projects.project]]
+		name = "{nfldraftr}"
+		description  = "R package to pull historical NFL draft data from Pro Football Reference."
+		project_page = "https://github.com/tomasokal/nfldraftr/"
+		code_link = "https://github.com/tomasokal/nfldraftr/"
 		
 	[[params.projects.project]]
 		name = "{phackr}"
@@ -66,20 +72,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 		code_link = "https://github.com/tomasokal/RSlovakia"
 		
 [[params.conferences]]
-
-	[[params.conferences.conference]]
-		name = "satRday Chicago 2020 (Virtual)"
-		description  = "Attended as participant."
-		conference_page = "https://chicago2020.satrdays.org/"
-		code_link = ""
-		blog_link = ""
-		
-	[[params.conferences.conference]]
-		name = "Chicago R Collaborative 2020 (Virtual)"
-		description  = "Attended as participant."
-		conference_page = "https://chircollab.github.io/#page-top"
-		code_link = ""
-		blog_link = ""
 
 	[[params.conferences.conference]]
 		name = "MPSA 2020 (Cancelled)"
