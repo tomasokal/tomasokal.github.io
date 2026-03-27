@@ -1,0 +1,40 @@
+{
+  "trip": {
+    "id": "nova-scotia-2025",
+    "title": "Nova Scotia",
+    "description": "Southwestern Nova Scotia coastal landscapes and cultural sites.",
+    "startDate": "2025-07-12",
+    "endDate": "2025-07-19",
+    "location": {
+      "name": "Nova Scotia",
+      "center": [44.5046, -65.9168]
+    },
+    "coverPhotoId": "NS003"
+  },
+  "photos": [
+    {
+      "id": "NS001",
+      "title": "The Lighthouse",
+      "description": "Apple core lighthouse at Yarmouth harbor entrance.",
+      "location": { "lat": 43.8379, "lng": -66.1197, "name": "Yarmouth" },
+      "date": "2025-07-12T11:15:00.000Z",
+      "exif": { "camera": "Fujifilm X-T200", "lens": "Super-Takumar 50mm f/1.4", "focalLength": 50, "aperture": "f/0.0", "shutterSpeed": "1/3800", "iso": 200 }
+    },
+    {
+      "id": "NS001",
+      "title": "Cape Forchu",
+      "description": "Leif Erikson Park grounds at Cape Forchu.",
+      "location": { "lat": 43.8379, "lng": -66.1197, "name": "Yarmouth" },
+      "date": "2025-07-12T11:15:00.000Z",
+      "exif": { "camera": "Fujifilm X-T5", "lens": "XF 23mm f/1.4", "focalLength": 23, "aperture": "f/0.0", "shutterSpeed": "1/1300", "iso": 200 }
+    },
+    {
+      "id": "NS001",
+      "title": "Cape Forchu Lighthouse",
+      "description": "Cape Forchu Lighthouse and lightkeeper's residence.",
+      "location": { "lat": 43.8379, "lng": -66.1197, "name": "Yarmouth" },
+      "date": "2025-07-12T11:15:00.000Z",
+      "exif": { "camera": "Fujifilm X-T5", "lens": "XF 23mm f/1.4", "focalLength": 23, "aperture": "f/0.0", "shutterSpeed": "1/2200", "iso": 200 }
+    }
+  ]
+}
