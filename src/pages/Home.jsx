@@ -19,30 +19,94 @@ export default function Home() {
   return (
     <main className="home-page">
       <section className="hero">
-        <div className="hero-text">
-          {featuredTrip && (
-            <div className="hero-featured-info">
-              <p className="hero-featured-trip">{featuredTrip.trip.title.toUpperCase()}</p>
-              <p className="hero-featured-location">{featuredTrip.trip.location.name}</p>
-              <p className="hero-featured-desc">{featuredTrip.trip.description}</p>
-            </div>
-          )}
-
-          <Link to="/trips" className="hero-cta">
-            VIEW GALLERY
-          </Link>
-        </div>
-
+        {/* Left column: Featured photo */}
         <div className="hero-media">
           {coverImage ? (
             <Link to={`/trips/${featuredTrip.trip.id}`} className="hero-image-wrap">
               <img src={coverImage} alt={featuredTrip.trip.title} className="hero-image" />
+              {featuredTrip && (
+                <div className="hero-image-meta">
+                  <div className="hero-meta-cell">
+                    <span className="hero-meta-label">Trip</span>
+                    <span className="hero-meta-value">{featuredTrip.trip.title.toUpperCase()}</span>
+                  </div>
+                  <div className="hero-meta-cell">
+                    <span className="hero-meta-label">Location</span>
+                    <span className="hero-meta-value">{featuredTrip.trip.location.name.toUpperCase()}</span>
+                  </div>
+                  <div className="hero-meta-cell">
+                    <span className="hero-meta-label">Period</span>
+                    <span className="hero-meta-value">
+                      {featuredTrip.trip.startDate?.slice(0, 7).replace('-', '.')}
+                    </span>
+                  </div>
+                  <div className="hero-meta-cell">
+                    <span className="hero-meta-label">Photos</span>
+                    <span className="hero-meta-value">{featuredTrip.photos?.length || 0}</span>
+                  </div>
+                </div>
+              )}
             </Link>
           ) : (
             <div className="hero-image-wrap hero-placeholder">
               <span className="material-symbols-outlined">photo_camera</span>
             </div>
           )}
+        </div>
+
+        {/* Right column: Bio & Network */}
+        <div className="hero-sidebar">
+          <section className="home-bio-section">
+            <h3 className="home-section-heading">
+              <span className="home-section-dot home-section-dot--red"></span>
+              Personnel_Bio
+            </h3>
+            <div className="home-bio-content">
+              <p>
+                I am a <strong>Data Solutions Architect</strong> at{' '}
+                <span className="home-bio-employer">Oliver Wyman</span>.
+              </p>
+              <p className="home-bio-secondary">
+                Beyond this, I enjoy art, ceramics, photography, and rock
+                climbing.
+              </p>
+            </div>
+          </section>
+
+          <section className="home-network-section">
+            <h3 className="home-section-heading">
+              <span className="home-section-dot"></span>
+              Network_Access
+            </h3>
+            <ul className="home-network-list">
+              <li>
+                <a
+                  href="https://github.com/tomasokal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="home-network-link"
+                >
+                  <span>GITHUB</span>
+                  <span className="material-symbols-outlined home-network-arrow">arrow_outward</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tomas-okal-36049b143/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="home-network-link"
+                >
+                  <span>LINKEDIN</span>
+                  <span className="material-symbols-outlined home-network-arrow">arrow_outward</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <Link to="/trips" className="hero-cta">
+            VIEW GALLERY
+          </Link>
         </div>
       </section>
     </main>

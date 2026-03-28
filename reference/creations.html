@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<title>CREATIONS | ARCHIVAL_PORTFOLIO</title>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#e1e3e5",
+                        "tertiary": "#1f2224",
+                        "tertiary-container": "#343739",
+                        "inverse-primary": "#a4c9fa",
+                        "surface-container": "#faecda",
+                        "on-surface": "#211b10",
+                        "surface-container-highest": "#eee0cf",
+                        "outline-variant": "#c3c6d0",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#b8101c",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#204972",
+                        "inverse-surface": "#372f24",
+                        "on-background": "#211b10",
+                        "surface-variant": "#eee0cf",
+                        "surface-dim": "#e6d8c7",
+                        "background": "#fff8f3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#002240",
+                        "on-primary-container": "#7da2d1",
+                        "surface-container-low": "#fff2e2",
+                        "secondary-container": "#dc3031",
+                        "tertiary-fixed-dim": "#c5c7c9",
+                        "error": "#ba1a1a",
+                        "primary-container": "#083861",
+                        "on-primary": "#ffffff",
+                        "surface": "#fff8f3",
+                        "primary-fixed": "#d2e4ff",
+                        "inverse-on-surface": "#fdefdd",
+                        "surface-container-high": "#f4e6d5",
+                        "outline": "#73777f",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "primary-fixed-dim": "#a4c9fa",
+                        "on-tertiary-fixed": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#3b608c",
+                        "surface-bright": "#fff8f3",
+                        "on-surface-variant": "#42474e",
+                        "secondary-fixed-dim": "#ffb3ac",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#930010",
+                        "on-secondary-fixed": "#410003",
+                        "on-primary-fixed": "#001c37",
+                        "on-error-container": "#93000a"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .archival-grid {
+            background-image: radial-gradient(circle, #c3c6d0 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }
+        .red-margin {
+            border-left: 1px solid #b8101c;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-secondary selection:text-white">
+<!-- THE ARCHIVAL GRID UNDERLAY -->
+<div class="fixed inset-0 archival-grid pointer-events-none z-0"></div>
+<!-- TopNavBar -->
+<header class="bg-[#fff8f3] dark:bg-stone-900 docked full-width top-0 z-50 rounded-0 flex justify-between items-center w-full px-8 py-6 max-w-full sticky">
+<div class="text-xl font-black text-[#002240] dark:text-white tracking-tighter uppercase font-headline">
+            ARCHIVAL_PORTFOLIO
+        </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-['Inter'] font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] transition-opacity duration-150 hover:opacity-70" href="#">HOME</a>
+<a class="font-['Inter'] font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] transition-opacity duration-150 hover:opacity-70" href="#">TRIPS</a>
+<a class="font-['Inter'] font-extrabold uppercase tracking-tighter text-sm text-[#b8101c] border-b-2 border-[#b8101c] pb-1 transition-opacity duration-150 hover:opacity-70" href="#">CREATIONS</a>
+<a class="font-['Inter'] font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] transition-opacity duration-150 hover:opacity-70" href="#">MAP</a>
+</nav>
+<div class="flex items-center">
+<button class="material-symbols-outlined text-[#083861] dark:text-blue-400">menu</button>
+</div>
+</header>
+<main class="relative z-10 flex-grow px-8 pt-16 pb-24 max-w-7xl mx-auto w-full">
+<!-- Section Header -->
+<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="red-margin pl-6">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-2">INDEX_REF: 2024.CR.01</p>
+<h1 class="text-6xl md:text-8xl font-black font-headline uppercase tracking-tighter text-primary">CREATIONS</h1>
+</div>
+<div class="max-w-xs">
+<p class="text-sm font-medium leading-relaxed opacity-80 border-t border-outline-variant/30 pt-4">
+                    A recorded log of digital artifacts, software architecture, and personal technical explorations. Organized by sequence of development.
+                </p>
+</div>
+</div>
+<!-- Creations Grid (Bento/Asymmetric Style) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Project 001: Large Featured -->
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-low p-1 relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-on-surface/5">
+<div class="aspect-[16/9] bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-500 group-hover:scale-105" data-alt="Technical clean software interface showing abstract code structures and architectural blueprints in a dark blue monochromatic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4lZd2RmxRtIuwxSKftdMdq4d5kAqkhdYpcXVcg_TqG1UshZAcsM7sj8ujwQUfZ6g3Ah17yd2oV_z8pC2DU5Ld6Fhw6DFpp8WvkCHEedvUcGEbCw0vDxs2QHZDGmFWwrvr8DO8iIiePoaI9zFb0L2pODu7tWwt0qaT3KYr8RQ1QF3TVfkq0sGzg37zOsureoN_TXEXmjz0tTVEu8OAL8oI22lsvxhHqvLmTM9Dqmsi0bV1hXSUUcVkBUHKw7SwXduS-k2gj22bhvMa"/>
+</div>
+<div class="mt-6 flex flex-col">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-secondary font-bold tracking-widest px-2 py-0.5 border border-secondary">PROJECT_001</span>
+<span class="h-[1px] flex-grow bg-outline-variant/20"></span>
+<span class="font-label text-[10px] opacity-40 uppercase">LAT: 45.5230 N / LON: 122.6765 W</span>
+</div>
+<h3 class="text-3xl font-black font-headline uppercase text-primary mb-3">SYNTHETIC_HORIZON</h3>
+<p class="font-body text-sm text-on-surface/70 max-w-xl leading-relaxed">
+                            An experimental procedural world generator focusing on topographical accuracy and atmospheric light diffusion. Built using Rust and WebGPU.
+                        </p>
+<a class="mt-6 self-start text-xs font-bold font-headline uppercase border-b border-primary/40 pb-1 hover:border-secondary transition-colors" href="#">EXPLORE_RECORD</a>
+</div>
+</div>
+</div>
+<!-- Sidebar Details / Project 002 -->
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="group border-l-4 border-primary pl-6 py-2">
+<span class="font-label text-[10px] text-secondary font-bold mb-2 block uppercase">PROJECT_002</span>
+<h3 class="text-xl font-extrabold font-headline uppercase text-primary mb-3">KINETIC_FLOW</h3>
+<div class="aspect-square bg-surface-container mb-4 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Abstract geometric minimal shapes in red and white with sharp architectural shadows and high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBT6gPXkx2T4GgRDFwkyiqQSAPPq7d9VNoy6j5rKe7MziMdMX_FJMVDeY-I9ClHC-pPLnsp_QDQTeOy2aWE2ZtjOEa4UTaLVc9WjGMjuAxUDh7zxn0Eg4kHw0R43drSD1_zdLDqg5NQearPdWVlQ8gU3RoLlt-q6To4tZMv-77mO86QP2kjzUAXCP_pIcj_y7D1rSjS-DFRK_N8CpKp1HH2XFFS50Ymzp9mQM13BJFKS3w9RO9Z-CIq6wt3_l3GdtXro_-trBmwJUg"/>
+</div>
+<p class="text-xs font-body leading-relaxed opacity-70">
+                        A minimalist motion library for UI interactions, prioritizing linear mathematical easing over traditional cubic beziers.
+                    </p>
+</div>
+<div class="bg-primary text-on-primary p-8 flex flex-col justify-between h-full min-h-[300px]">
+<span class="material-symbols-outlined text-4xl mb-8">architecture</span>
+<div>
+<h3 class="text-xl font-black uppercase mb-4 tracking-tighter">THE ARCHIVE PROTOCOL</h3>
+<p class="text-xs font-label uppercase tracking-widest leading-relaxed text-on-primary-container">
+                            Systematic cataloging of all visual experiments conducted during the 2023-2024 cycle.
+                        </p>
+<button class="mt-8 bg-surface text-primary px-6 py-3 font-headline text-xs font-bold uppercase hover:bg-secondary hover:text-white transition-colors duration-200">
+                            ACCESS_FULL_LOGS
+                        </button>
+</div>
+</div>
+</div>
+<!-- Row 2: Symmetric but dense -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-highest/30 p-4 border-t-2 border-primary/10 transition-colors hover:bg-surface-container-highest/60">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] text-secondary font-bold uppercase">PROJECT_003</span>
+<span class="material-symbols-outlined text-lg opacity-30">terminal</span>
+</div>
+<div class="aspect-[4/3] mb-4 bg-white overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-150 group-hover:grayscale-0" data-alt="Clean lines of code on a monitor with soft bokeh background and cool blue studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS3tLOTWPiBSMqZ2_d1ukkvXZDvO77TrfpbRXVANYZ-oZ1V9D3MUeRBs2vPeTfNZTe-_PqYvJZx7taOl2ltDY4dKjVR4UzGKLA4U0vy14hsH4jeAed9ZrXGhdtXZB7FD2_r1YQQcjdJ_vc036xypeDb5rr7wpBJQUJinF-9kkw2p_A4Ukirlku2kB_qlUJhU3zExkKoYi89YtTSdOC9e2vfbrcp1xivuXGdboMbnZ0xRb3pBXOZUKnd1gkGF7kkxs0HZB2IS40u6rG"/>
+</div>
+<h3 class="text-lg font-extrabold font-headline uppercase text-primary mb-2">VOX_NEBULA</h3>
+<p class="text-xs opacity-60">Real-time voice modulation engine utilizing low-latency neural processing.</p>
+</div>
+</div>
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-highest/30 p-4 border-t-2 border-primary/10 transition-colors hover:bg-surface-container-highest/60">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] text-secondary font-bold uppercase">PROJECT_004</span>
+<span class="material-symbols-outlined text-lg opacity-30">map</span>
+</div>
+<div class="aspect-[4/3] mb-4 bg-white overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-150 group-hover:grayscale-0" data-alt="Overhead view of a vintage map with handwritten notes and technical compass markings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPlNqlkoz5JQDD0Xh9WA7r9U4Nk2uMOglSP375lpj6NPNGRKLn8dcGnuY9q-4eB4vCDzRSMrizTKJLuA-mC-8lQ97YWnaV4t9k-ivMXg0ljtYi9QFvyVn8goduPuVrj_wzbthd2EQRo-Jsm9pAXffq-Tj64mZ5uqljKkdKJq6ubX2cORFbHuRQ9Ckneg7ky9nPACFAbDdIXeuKFZZH_dIhj4QyE0ePxDClBaU5RCeX8vqapXTWTDoUCJlvSAGpb_hnS5NzvYGnPSiX"/>
+</div>
+<h3 class="text-lg font-extrabold font-headline uppercase text-primary mb-2">CARTOGRAPHY_OS</h3>
+<p class="text-xs opacity-60">Custom operating system skin for field researchers and land surveyors.</p>
+</div>
+</div>
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-highest/30 p-4 border-t-2 border-primary/10 transition-colors hover:bg-surface-container-highest/60">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] text-secondary font-bold uppercase">PROJECT_005</span>
+<span class="material-symbols-outlined text-lg opacity-30">data_object</span>
+</div>
+<div class="aspect-[4/3] mb-4 bg-white overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-150 group-hover:grayscale-0" data-alt="Geometric mesh of a 3D model with subtle lighting and clean white backgrounds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtp6ok263Lb6io-VNICWVG0uiJaAhURm6Vwr9yUeZbmnmBBw-ZkJU6ZUFF4iPuy95KWBaF5pBibxJmfeNPMem-J7fsbC0A_wbXwIMl_9PSGz_sPsSg43GRnioOdVFLTQf6IAvitO3udwt5hOIYuCbs1huTKxQQvvqy00GCevxdKuPX9xDE6TYmlqa3Zd49zoWbVNQmxrQ6LiTOMoKq8R3Gu-X2E2TyWtl4QD59F4sMp75a81BV8R0by8_mu1PH1FrzMToPDo1Aj07k"/>
+</div>
+<h3 class="text-lg font-extrabold font-headline uppercase text-primary mb-2">PRISM_PROTOCOL</h3>
+<p class="text-xs opacity-60">Secure decentralized ledger for recording provenance of physical art pieces.</p>
+</div>
+</div>
+</div>
+<!-- Meta Information Bottom Row -->
+<div class="mt-32 pt-12 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex gap-16">
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-4">SYSTEM_STATUS</h4>
+<ul class="space-y-2 text-[10px] font-bold uppercase">
+<li class="flex items-center gap-2"><span class="w-2 h-2 bg-green-600"></span> NETWORK_OPERATIONAL</li>
+<li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary"></span> ARCHIVE_LOCK_ACTIVE</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-4">COORDINATES</h4>
+<p class="text-[10px] font-bold uppercase opacity-50">NULL_POINT_OBSERVATION<br/>REF_Z: 400.12</p>
+</div>
+</div>
+<div class="text-right">
+<span class="text-6xl md:text-9xl font-black opacity-[0.03] select-none absolute right-8 bottom-24">2024_LOG</span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fff8f3] dark:bg-stone-900 flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full mt-auto docked full-width bottom-0 border-t border-[#c3c6d0]/20 z-20">
+<div class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 mb-4 md:mb-0">
+            © 2024 DATA ARCHITECT / PHOTOGRAPHER. ALL RIGHTS RECORDED.
+        </div>
+<div class="flex space-x-8">
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors" href="#">INSTAGRAM</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors" href="#">LINKEDIN</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors" href="#">SYSTEM_LOGS</a>
+</div>
+</footer>
+</body></html>

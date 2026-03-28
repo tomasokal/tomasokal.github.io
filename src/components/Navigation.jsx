@@ -28,6 +28,13 @@ export default function Navigation() {
         >
           GALLERY
         </Link>
+        <Link
+          to="/creations"
+          className={`nav-link ${isActive('/creations') ? 'nav-active' : ''}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          CREATIONS
+        </Link>
       </nav>
       <button
         className="nav-menu-btn"

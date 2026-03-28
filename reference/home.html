@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#e1e3e5",
+              "tertiary": "#1f2224",
+              "tertiary-container": "#343739",
+              "inverse-primary": "#a4c9fa",
+              "surface-container": "#faecda",
+              "on-surface": "#211b10",
+              "surface-container-highest": "#eee0cf",
+              "outline-variant": "#c3c6d0",
+              "on-secondary": "#ffffff",
+              "secondary": "#b8101c",
+              "on-secondary-container": "#fffbff",
+              "on-primary-fixed-variant": "#204972",
+              "inverse-surface": "#372f24",
+              "on-background": "#211b10",
+              "surface-variant": "#eee0cf",
+              "surface-dim": "#e6d8c7",
+              "background": "#fff8f3",
+              "surface-container-lowest": "#ffffff",
+              "primary": "#002240",
+              "on-primary-container": "#7da2d1",
+              "surface-container-low": "#fff2e2",
+              "secondary-container": "#dc3031",
+              "tertiary-fixed-dim": "#c5c7c9",
+              "error": "#ba1a1a",
+              "primary-container": "#083861",
+              "on-primary": "#ffffff",
+              "surface": "#fff8f3",
+              "primary-fixed": "#d2e4ff",
+              "inverse-on-surface": "#fdefdd",
+              "surface-container-high": "#f4e6d5",
+              "outline": "#73777f",
+              "on-tertiary-fixed-variant": "#444749",
+              "primary-fixed-dim": "#a4c9fa",
+              "on-tertiary-fixed": "#191c1e",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "surface-tint": "#3b608c",
+              "surface-bright": "#fff8f3",
+              "on-surface-variant": "#42474e",
+              "secondary-fixed-dim": "#ffb3ac",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#930010",
+              "on-secondary-fixed": "#410003",
+              "on-primary-fixed": "#001c37",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f3;
+            background-image: radial-gradient(#c3c6d0 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            background-attachment: fixed;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .red-margin {
+            border-left: 2px solid #b8101c;
+        }
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full px-8 py-6 flex justify-between items-center bg-[#fff8f3] dark:bg-stone-900 border-b-0">
+<div class="text-xl font-black text-[#002240] dark:text-white tracking-tighter uppercase font-headline">
+            ARCHIVAL_PORTFOLIO
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-extrabold uppercase tracking-tighter text-sm text-[#b8101c] border-b-2 border-[#b8101c] pb-1" href="#">HOME</a>
+<a class="font-headline font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] hover:opacity-70 transition-opacity duration-150" href="#">TRIPS</a>
+<a class="font-headline font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] hover:opacity-70 transition-opacity duration-150" href="#">CREATIONS</a>
+<a class="font-headline font-extrabold uppercase tracking-tighter text-sm text-[#002240] dark:text-stone-300 hover:text-[#083861] hover:opacity-70 transition-opacity duration-150" href="#">MAP</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#083861] dark:text-blue-400 cursor-pointer">menu</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-screen-2xl mx-auto px-8 py-16 grid grid-cols-12 gap-y-16 md:gap-y-0">
+<!-- Left Column: Branding & Meta -->
+<div class="col-span-12 md:col-span-1 flex flex-col items-start gap-8 pt-2">
+<div class="text-vertical font-label text-[10px] tracking-[0.3em] uppercase text-secondary font-bold">
+                REF_NO. 2024_OW_001
+            </div>
+<div class="w-px h-32 bg-outline-variant opacity-30"></div>
+</div>
+<!-- Middle Column: Hero Typography & Featured Visual -->
+<div class="col-span-12 md:col-span-7 flex flex-col gap-12 border-l border-outline-variant/20 pl-8 md:pl-16">
+<header class="flex flex-col">
+<p class="font-label text-xs text-secondary font-bold mb-2 tracking-widest">40.7128° N, 74.0060° W</p>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none text-primary uppercase">
+                    Data<br/>Architect
+                </h1>
+<div class="mt-8 red-margin pl-6 max-w-xl">
+<p class="text-xl md:text-2xl font-light text-on-surface/80 leading-relaxed italic">
+                        "Bridging the gap between raw algorithmic structure and the tactile reality of human exploration."
+                    </p>
+</div>
+</header>
+<!-- Featured Archival Photo -->
+<div class="relative mt-12 group">
+<div class="absolute -top-4 -left-4 bg-primary text-on-primary font-label text-[10px] px-3 py-1 z-10 uppercase tracking-widest">
+                    Fig. 01: Field Observation
+                </div>
+<div class="bg-surface-container-highest p-4 md:p-8 shadow-sm">
+<img alt="Archival camera" class="w-full h-[500px] object-cover filter grayscale-[0.3] sepia-[0.1]" data-alt="A vintage medium format camera resting on a wooden desk next to handwritten field notes and a compass, soft cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaSmxzBk2rd5I93oGvLxGeypS3DiHhq_xklgqetE4CnJoYcNguiaKHZl_-VR365mWEuSLv86aj2AF9BXK9eHrk1_FfAN0NQfAJtOyg_HD0KppPYSyGZLTsrQYvmRzDdt7dlhF7PTWPOyFwRQs4X4Kv-00Hgx7a8MZIj4ep2q0Twkb6r9RjN8L7wJ9W_U0-7gpzU8DybQQeLzzIPbLvBVwYsmtgUHd7HovE0FkOKjpX0W-Ob3jdCG3brl8eX2mLnSEBrpjMLT6lkWOP"/>
+<!-- Metadata Annotations -->
+<div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="flex flex-col border-t border-outline-variant/30 pt-2">
+<span class="font-label text-[9px] uppercase text-outline">Film_Stock</span>
+<span class="font-headline font-bold text-xs uppercase">Kodak_Portra_400</span>
+</div>
+<div class="flex flex-col border-t border-outline-variant/30 pt-2">
+<span class="font-label text-[9px] uppercase text-outline">Lens_Optic</span>
+<span class="font-headline font-bold text-xs uppercase">80mm_f/2.8</span>
+</div>
+<div class="flex flex-col border-t border-outline-variant/30 pt-2">
+<span class="font-label text-[9px] uppercase text-outline">Timestamp</span>
+<span class="font-headline font-bold text-xs uppercase">14:22:01_GMT</span>
+</div>
+<div class="flex flex-col border-t border-outline-variant/30 pt-2">
+<span class="font-label text-[9px] uppercase text-outline">Condition</span>
+<span class="font-headline font-bold text-xs uppercase">Overcast_Diffuse</span>
+</div>
+</div>
+</div>
+<!-- Swiss Style "Tape" element -->
+<div class="absolute bottom-12 -right-4 bg-secondary-container w-32 h-8 opacity-20 transform rotate-3 pointer-events-none"></div>
+</div>
+</div>
+<!-- Right Column: Bio & Links -->
+<div class="col-span-12 md:col-span-4 flex flex-col justify-start md:pl-16 gap-16">
+<section class="flex flex-col gap-6">
+<h3 class="font-label text-xs font-bold uppercase tracking-[0.4em] text-outline flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary"></span> 
+                    Personnel_Bio
+                </h3>
+<div class="font-headline text-lg leading-relaxed text-on-surface space-y-4">
+<p>
+                        I am a <span class="font-black text-primary">Data Solutions Architect</span> at <span class="border-b border-primary">Oliver Wyman</span>. 
+                    </p>
+<p class="text-on-surface/70">
+                        My practice revolves around the systematization of chaos. Beyond the terminal, I enjoy art, ceramics, photography, and rock climbing.
+                    </p>
+</div>
+</section>
+<section class="flex flex-col gap-6">
+<h3 class="font-label text-xs font-bold uppercase tracking-[0.4em] text-outline flex items-center gap-2">
+<span class="w-2 h-2 bg-outline"></span> 
+                    Network_Access
+                </h3>
+<ul class="flex flex-col gap-4">
+<li>
+<a class="group flex items-center justify-between py-2 border-b border-outline-variant/20 hover:border-primary transition-colors" href="#">
+<span class="font-headline font-extrabold uppercase text-sm tracking-tighter">GITHUB</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</a>
+</li>
+<li>
+<a class="group flex items-center justify-between py-2 border-b border-outline-variant/20 hover:border-primary transition-colors" href="#">
+<span class="font-headline font-extrabold uppercase text-sm tracking-tighter">LINKEDIN</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</a>
+</li>
+</ul>
+</section>
+<!-- Decorative Coordinate Block -->
+<div class="mt-auto bg-surface-container-low p-6 border-l-4 border-primary">
+<p class="font-label text-[10px] uppercase text-outline-variant mb-4">Current_Environment</p>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-label">
+<span class="text-outline">LATITUDE</span>
+<span class="font-bold">40.7128</span>
+</div>
+<div class="flex justify-between text-[11px] font-label">
+<span class="text-outline">LONGITUDE</span>
+<span class="font-bold">-74.0060</span>
+</div>
+<div class="flex justify-between text-[11px] font-label">
+<span class="text-outline">ALTITUDE</span>
+<span class="font-bold">10M_AMSL</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full mt-auto bg-[#fff8f3] dark:bg-stone-900 border-t border-[#c3c6d0]/30">
+<div class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400">
+            © 2024 DATA ARCHITECT / PHOTOGRAPHER. ALL RIGHTS RECORDED.
+        </div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#211b10] dark:text-stone-400 hover:text-[#b8101c] transition-colors duration-150 text-[#b8101c]" href="#">SYSTEM_LOGS</a>
+</div>
+</footer>
+</body></html>

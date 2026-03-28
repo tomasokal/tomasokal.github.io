@@ -26,7 +26,7 @@
             "lng": -66.1197,
             "name": "Yarmouth"
           },
-          "date": "2025-07-12T11:15:00.000Z",
+          "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
             "lens": "Super-Takumar 50mm f/1.4",
@@ -37,7 +37,7 @@
           }
         },
         {
-          "id": "NS001",
+          "id": "NS002",
           "title": "Cape Forchu",
           "description": "Leif Erikson Park grounds at Cape Forchu.",
           "location": {
@@ -45,18 +45,18 @@
             "lng": -66.1197,
             "name": "Yarmouth"
           },
-          "date": "2025-07-12T11:15:00.000Z",
+          "date": "2025-07-17T11:15:00.000Z",
           "exif": {
-            "camera": "Fujifilm X-T5",
-            "lens": "XF 23mm f/1.4",
-            "focalLength": 23,
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
             "aperture": "f/0.0",
             "shutterSpeed": "1/1300",
             "iso": 200
           }
         },
         {
-          "id": "NS001",
+          "id": "NS003",
           "title": "Cape Forchu Lighthouse",
           "description": "Cape Forchu Lighthouse and lightkeeper's residence.",
           "location": {
@@ -64,18 +64,56 @@
             "lng": -66.1197,
             "name": "Yarmouth"
           },
-          "date": "2025-07-12T11:15:00.000Z",
+          "date": "2025-07-17T11:15:00.000Z",
           "exif": {
-            "camera": "Fujifilm X-T5",
-            "lens": "XF 23mm f/1.4",
-            "focalLength": 23,
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
             "aperture": "f/0.0",
             "shutterSpeed": "1/2200",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS007",
+          "title": "Cape Blomidon",
+          "description": "Cape Blomidon and lower Bay of Fundy tideline.",
+          "location": {
+            "lat": 45.2945,
+            "lng": -64.3315,
+            "name": "Cape Blomidon"
+          },
+          "date": "2025-07-19T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/3200",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS008",
+          "title": "Cape Blomidon Lighthouse",
+          "description": "Cape Blomidon cliffside.",
+          "location": {
+            "lat": 45.2945,
+            "lng": -64.3315,
+            "name": "Cape Blomidon"
+          },
+          "date": "2025-07-19T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/1800",
             "iso": 200
           }
         }
       ]
     }
   ],
-  "generatedAt": "2026-03-27T03:24:24.796Z"
+  "generatedAt": "2026-03-28T04:12:23.238Z"
 }

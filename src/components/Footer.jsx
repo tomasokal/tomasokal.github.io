@@ -5,10 +5,11 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-left">
         <span className="footer-brand">TOMAS OKAL</span>
-        <span className="footer-copy">&copy;2024 ALL RIGHTS RESERVED</span>
+        <span className="footer-copy">&copy;2026 ALL RIGHTS RESERVED</span>
       </div>
       <div className="footer-right">
         <Link to="/trips" className="footer-link">GALLERY</Link>
+        <Link to="/creations" className="footer-link">CREATIONS</Link>
       </div>
     </footer>
   );

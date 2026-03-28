@@ -73,7 +73,7 @@ export default function TripDetail() {
   const sidebarLeaflet = useRef(null);
   const sidebarLayers = useRef({ markers: [], routeLine: null, ghostLine: null });
   const [isCompact, setIsCompact] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(-1);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   // We need locations computed before hooks, so we derive early
   // (hooks must be called unconditionally)
@@ -85,7 +85,7 @@ export default function TripDetail() {
     const onScroll = () => {
       if (!heroRef.current) return;
       const heroBottom = heroRef.current.getBoundingClientRect().bottom;
-      setIsCompact(heroBottom < 80);
+      setIsCompact(heroBottom < 200);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -106,7 +106,7 @@ export default function TripDetail() {
         });
         if (topIdx >= 0) setActiveIdx(topIdx);
       },
-      { rootMargin: '-20% 0px -50% 0px', threshold: 0 }
+      { rootMargin: '0px 0px -60% 0px', threshold: 0 }
     );
     const nodes = sectionRefs.current.filter(Boolean);
     nodes.forEach((n) => observer.observe(n));
