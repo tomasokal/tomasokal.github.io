@@ -4,5 +4,7 @@ dist/
 .DS_Store
 *.log
 
-# Optimized images are built from originals — don't commit them
-public/images/
+# Optimized trip images are built from originals — don't commit them
+public/images/nova-scotia-2025/
+# Keep creations assets tracked
+!public/images/creations/

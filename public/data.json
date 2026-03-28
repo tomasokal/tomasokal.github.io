@@ -75,6 +75,63 @@
           }
         },
         {
+          "id": "NS004",
+          "title": "Gilbert's Cove Lighthouse",
+          "description": "Gilbert's Cove Lighthouse and lightkeeper's residence.",
+          "location": {
+            "lat": 44.4944,
+            "lng": -65.9522,
+            "name": "Gilbert's Cove"
+          },
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/900",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS005",
+          "title": "Bird in Gilbert's Cove",
+          "description": "A bird perched in Gilbert's Cove.",
+          "location": {
+            "lat": 44.4944,
+            "lng": -65.9522,
+            "name": "Gilbert's Cove"
+          },
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/420",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS006",
+          "title": "Birds in Gilbert's Cove",
+          "description": "A group of birds in Gilbert's Cove.",
+          "location": {
+            "lat": 44.4944,
+            "lng": -65.9522,
+            "name": "Gilbert's Cove"
+          },
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/640",
+            "iso": 200
+          }
+        },
+        {
           "id": "NS007",
           "title": "Cape Blomidon",
           "description": "Cape Blomidon and lower Bay of Fundy tideline.",
@@ -115,5 +172,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-03-28T04:12:23.238Z"
+  "generatedAt": "2026-03-28T18:11:03.425Z"
 }
