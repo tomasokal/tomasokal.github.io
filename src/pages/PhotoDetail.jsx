@@ -20,7 +20,10 @@ export default function PhotoDetail() {
   const result = getPhotoById(data, photoId);
   if (!result) return <main className="page-error"><p>OBSERVATION NOT FOUND</p></main>;
 
-  const { photo, trip } = result;
+  const { photo, trip, locations } = result;
+  const locDef = locations?.find(l => l.name === photo.location?.name || l.name === photo.location);
+  const lat = locDef?.lat ?? photo.location?.lat;
+  const lng = locDef?.lng ?? photo.location?.lng;
   const imagePath = `${import.meta.env.BASE_URL}images/${trip.id}/${photo.id}.webp`;
 
   return (
@@ -28,17 +31,17 @@ export default function PhotoDetail() {
       <div className="photo-detail-container">
         {/* Header */}
         <div className="photo-detail-meta-header">
-          {photo.location.lat != null && (
+          {lat != null && (
             <span className="detail-coord-label">
-              {Math.abs(photo.location.lat).toFixed(4)}°{' '}
-              {photo.location.lat >= 0 ? 'N' : 'S'},{' '}
-              {Math.abs(photo.location.lng).toFixed(4)}°{' '}
-              {photo.location.lng >= 0 ? 'E' : 'W'}
+              {Math.abs(lat).toFixed(4)}°{' '}
+              {lat >= 0 ? 'N' : 'S'},{' '}
+              {Math.abs(lng).toFixed(4)}°{' '}
+              {lng >= 0 ? 'E' : 'W'}
             </span>
           )}
           <h1 className="photo-detail-title">{photo.title.toUpperCase()}</h1>
           <span className="photo-detail-context">
-            {photo.location.name.toUpperCase()} // {formatDate(photo.date)}
+            {(photo.location?.name || photo.location || '').toUpperCase()} // {formatDate(photo.date)}
           </span>
         </div>
 

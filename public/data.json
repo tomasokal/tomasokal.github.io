@@ -16,16 +16,50 @@
         },
         "coverPhotoId": "NS003"
       },
+      "locations": [
+        {
+          "name": "Yarmouth",
+          "lat": 43.8379,
+          "lng": -66.1197,
+          "order": 0
+        },
+        {
+          "name": "Mavillette Beach",
+          "lat": 44.0847,
+          "lng": -66.1834,
+          "order": 1
+        },
+        {
+          "name": "Digby Neck",
+          "lat": 44.4981,
+          "lng": -66.0981,
+          "order": 2
+        },
+        {
+          "name": "Gilbert's Cove",
+          "lat": 44.4944,
+          "lng": -65.9522,
+          "order": 3
+        },
+        {
+          "name": "Kejimkujik National Park",
+          "lat": 44.2403,
+          "lng": -65.1338,
+          "order": 4
+        },
+        {
+          "name": "Cape Blomidon",
+          "lat": 45.2945,
+          "lng": -64.3315,
+          "order": 5
+        }
+      ],
       "photos": [
         {
           "id": "NS001",
           "title": "The Lighthouse",
           "description": "Apple core lighthouse at Yarmouth harbor entrance.",
-          "location": {
-            "lat": 43.8379,
-            "lng": -66.1197,
-            "name": "Yarmouth"
-          },
+          "location": "Yarmouth",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -40,11 +74,7 @@
           "id": "NS002",
           "title": "Cape Forchu",
           "description": "Leif Erikson Park grounds at Cape Forchu.",
-          "location": {
-            "lat": 43.8379,
-            "lng": -66.1197,
-            "name": "Yarmouth"
-          },
+          "location": "Yarmouth",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -59,11 +89,7 @@
           "id": "NS003",
           "title": "Cape Forchu Lighthouse",
           "description": "Cape Forchu Lighthouse and lightkeeper's residence.",
-          "location": {
-            "lat": 43.8379,
-            "lng": -66.1197,
-            "name": "Yarmouth"
-          },
+          "location": "Yarmouth",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -78,11 +104,7 @@
           "id": "NS004",
           "title": "Gilbert's Cove Lighthouse",
           "description": "Gilbert's Cove Lighthouse and lightkeeper's residence.",
-          "location": {
-            "lat": 44.4944,
-            "lng": -65.9522,
-            "name": "Gilbert's Cove"
-          },
+          "location": "Gilbert's Cove",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -97,11 +119,7 @@
           "id": "NS005",
           "title": "Bird in Gilbert's Cove",
           "description": "A bird perched in Gilbert's Cove.",
-          "location": {
-            "lat": 44.4944,
-            "lng": -65.9522,
-            "name": "Gilbert's Cove"
-          },
+          "location": "Gilbert's Cove",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -116,11 +134,7 @@
           "id": "NS006",
           "title": "Birds in Gilbert's Cove",
           "description": "A group of birds in Gilbert's Cove.",
-          "location": {
-            "lat": 44.4944,
-            "lng": -65.9522,
-            "name": "Gilbert's Cove"
-          },
+          "location": "Gilbert's Cove",
           "date": "2025-07-17T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -135,11 +149,7 @@
           "id": "NS007",
           "title": "Cape Blomidon",
           "description": "Cape Blomidon and lower Bay of Fundy tideline.",
-          "location": {
-            "lat": 45.2945,
-            "lng": -64.3315,
-            "name": "Cape Blomidon"
-          },
+          "location": "Cape Blomidon",
           "date": "2025-07-19T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -152,13 +162,9 @@
         },
         {
           "id": "NS008",
-          "title": "Cape Blomidon Lighthouse",
+          "title": "Cape Blomidon",
           "description": "Cape Blomidon cliffside.",
-          "location": {
-            "lat": 45.2945,
-            "lng": -64.3315,
-            "name": "Cape Blomidon"
-          },
+          "location": "Cape Blomidon",
           "date": "2025-07-19T11:15:00.000Z",
           "exif": {
             "camera": "Fujifilm X-T200",
@@ -168,9 +174,189 @@
             "shutterSpeed": "1/1800",
             "iso": 200
           }
+        },
+        {
+          "id": "NS009",
+          "title": "Sandy Cove Beach Cliffs",
+          "description": "Flora at low tide alongside the cliffs at Sandy Cove Beach.",
+          "location": "Digby Neck",
+          "date": "2025-07-15T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/1300",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS010",
+          "title": "Sandy Cove Beach Tide Pools",
+          "description": "Tide pools alongside the cliffs at Sandy Cove Beach on way to bouldering area.",
+          "location": "Digby Neck",
+          "date": "2025-07-15T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/1300",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS011",
+          "title": "Little River",
+          "description": "Harbor of Little River on Digby Neck.",
+          "location": "Digby Neck",
+          "date": "2025-07-15T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS012",
+          "title": "Dune 1",
+          "description": "Fragile marram grass-covered dunes protected by boardwalk at Mavillette Beach Provincial Park.",
+          "location": "Mavillette Beach",
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS013",
+          "title": "Dune 2",
+          "description": "Fragile marram grass-covered dunes protected by boardwalk at Mavillette Beach Provincial Park.",
+          "location": "Mavillette Beach",
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS014",
+          "title": "Dune 3",
+          "description": "Fragile marram grass-covered dunes protected by boardwalk at Mavillette Beach Provincial Park.",
+          "location": "Mavillette Beach",
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS015",
+          "title": "Dune 4",
+          "description": "Low tide exposes sand flats; then the hot sand warms the water.",
+          "location": "Mavillette Beach",
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS016",
+          "title": "Dune 5",
+          "description": "Photographer and fiance.",
+          "location": "Mavillette Beach",
+          "date": "2025-07-17T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS017",
+          "title": "Ôasis",
+          "description": "Ôasis at Jim Charles Point. Tear drop shaped duplex accomodations at Kejimkujik National Park.",
+          "location": "Kejimkujik National Park",
+          "date": "2025-07-16T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS018",
+          "title": "Slapfoot Trail",
+          "description": "Slapfoot Trail at Kejimkujik National Park.",
+          "location": "Kejimkujik National Park",
+          "date": "2025-07-16T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS019",
+          "title": "Spider",
+          "description": "Spider in tree.",
+          "location": "Kejimkujik National Park",
+          "date": "2025-07-16T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
+        },
+        {
+          "id": "NS020",
+          "title": "Bird nest",
+          "description": "Bird nest in tree.",
+          "location": "Kejimkujik National Park",
+          "date": "2025-07-16T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/4000",
+            "iso": 200
+          }
         }
       ]
     }
   ],
-  "generatedAt": "2026-03-28T18:11:03.425Z"
+  "generatedAt": "2026-03-30T14:26:04.079Z"
 }

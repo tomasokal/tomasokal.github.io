@@ -21,15 +21,35 @@ function coordString(center) {
 
 /* --- map helpers (mirrored from TripDetail) --- */
 
-function groupByLocation(photos) {
+function groupByLocation(photos, locationsDef) {
   const map = new Map();
   photos.forEach((photo) => {
-    const key = photo.location?.name || 'Unknown';
+    const loc = photo.location;
+    const key = typeof loc === 'string' ? loc : (loc?.name || 'Unknown');
     if (!map.has(key)) {
-      map.set(key, { name: key, lat: photo.location?.lat, lng: photo.location?.lng, photos: [] });
+      map.set(key, { name: key, lat: loc?.lat, lng: loc?.lng, photos: [] });
     }
     map.get(key).photos.push(photo);
   });
+
+  if (locationsDef && locationsDef.length > 0) {
+    const result = [];
+    const sorted = [...locationsDef].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    sorted.forEach((def) => {
+      const existing = map.get(def.name);
+      result.push({
+        name: def.name,
+        lat: def.lat,
+        lng: def.lng,
+        order: def.order,
+        photos: existing ? existing.photos : [],
+      });
+      map.delete(def.name);
+    });
+    map.forEach((loc) => result.push(loc));
+    return result;
+  }
+
   return Array.from(map.values());
 }
 
@@ -59,14 +79,14 @@ function catmullRomSpline(locs, density = 20) {
 
 /* --- Mini-map component for the gallery sidebar --- */
 
-function GalleryMiniMap({ photos }) {
+function GalleryMiniMap({ photos, locationsDef }) {
   const mapRef = useRef(null);
   const leafletRef = useRef(null);
 
   useEffect(() => {
     if (!mapRef.current || leafletRef.current) return;
 
-    const locations = groupByLocation(photos);
+    const locations = groupByLocation(photos, locationsDef);
 
     const map = L.map(mapRef.current, {
       zoomControl: false,
@@ -210,7 +230,7 @@ export default function Trips() {
                   </p>
                 </div>
                 <div className="trip-gallery-map-container">
-                  <GalleryMiniMap photos={featured.photos || []} />
+                  <GalleryMiniMap photos={featured.photos || []} locationsDef={featured.locations} />
                 </div>
               </div>
             </div>

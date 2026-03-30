@@ -53,16 +53,15 @@ async function addTrip() {
       },
       coverPhotoId: coverPhotoId
     },
+    locations: [
+      { name: locationName, lat: lat, lng: lng, order: 0 }
+    ],
     photos: [
       {
         id: '_DSC0001',
         title: 'Example Photo',
         description: 'Add your photo description here',
-        location: {
-          lat: lat,
-          lng: lng,
-          name: locationName
-        },
+        location: locationName,
         date: new Date().toISOString(),
         exif: {
           camera: 'Your Camera Model',

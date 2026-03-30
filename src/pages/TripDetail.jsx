@@ -6,15 +6,39 @@ import 'leaflet/dist/leaflet.css';
 
 /* ---------- helpers ---------- */
 
-function groupByLocation(photos) {
+function groupByLocation(photos, locationsDef) {
   const map = new Map();
   photos.forEach((photo) => {
-    const key = photo.location?.name || 'Unknown';
+    const loc = photo.location;
+    const key = typeof loc === 'string' ? loc : (loc?.name || 'Unknown');
     if (!map.has(key)) {
-      map.set(key, { name: key, lat: photo.location?.lat, lng: photo.location?.lng, photos: [] });
+      map.set(key, { name: key, lat: loc?.lat, lng: loc?.lng, photos: [] });
     }
     map.get(key).photos.push(photo);
   });
+
+  // If explicit locations with order are provided, use them
+  if (locationsDef && locationsDef.length > 0) {
+    const orderMap = new Map(locationsDef.map((l) => [l.name, l]));
+    const result = [];
+    // Add locations in explicit order, attaching photos
+    const sorted = [...locationsDef].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    sorted.forEach((def) => {
+      const existing = map.get(def.name);
+      result.push({
+        name: def.name,
+        lat: def.lat,
+        lng: def.lng,
+        order: def.order,
+        photos: existing ? existing.photos : [],
+      });
+      map.delete(def.name);
+    });
+    // Append any locations found in photos but not in the definition
+    map.forEach((loc) => result.push(loc));
+    return result;
+  }
+
   return Array.from(map.values());
 }
 
@@ -78,7 +102,7 @@ export default function TripDetail() {
   // We need locations computed before hooks, so we derive early
   // (hooks must be called unconditionally)
   const tripData = data ? getTripById(data, tripId) : null;
-  const locations = tripData ? groupByLocation(tripData.photos) : [];
+  const locations = tripData ? groupByLocation(tripData.photos, tripData.locations) : [];
 
   /* --- scroll handler: hero → compact bar --- */
   useEffect(() => {
@@ -132,8 +156,9 @@ export default function TripDetail() {
       noWrap: true,
     }).addTo(map);
     sidebarLeaflet.current = map;
-    if (locations.length > 0) {
-      const bounds = L.latLngBounds(locations.map((l) => [l.lat, l.lng]));
+    const validLocs = locations.filter((l) => l.lat != null && l.lng != null);
+    if (validLocs.length > 0) {
+      const bounds = L.latLngBounds(validLocs.map((l) => [l.lat, l.lng]));
       map.fitBounds(bounds.pad(0.25), { animate: false, maxZoom: 9 });
     }
     return () => { map.remove(); sidebarLeaflet.current = null; };
@@ -144,8 +169,9 @@ export default function TripDetail() {
     if (isCompact && sidebarLeaflet.current) {
       const timer = setTimeout(() => {
         sidebarLeaflet.current.invalidateSize();
-        if (locations.length > 0) {
-          const bounds = L.latLngBounds(locations.map((l) => [l.lat, l.lng]));
+        const validLocs = locations.filter((l) => l.lat != null && l.lng != null);
+        if (validLocs.length > 0) {
+          const bounds = L.latLngBounds(validLocs.map((l) => [l.lat, l.lng]));
           sidebarLeaflet.current.fitBounds(bounds.pad(0.25), { animate: false, maxZoom: 9 });
         }
       }, 550);
@@ -164,16 +190,18 @@ export default function TripDetail() {
 
     const newMarkers = [];
     const visibleCount = activeIdx + 1;
+    const validLocs = locations.filter((l) => l.lat != null && l.lng != null);
+    const validVisible = validLocs.filter((_, i) => i < visibleCount);
 
-    if (locations.length >= 2) {
-      const spline = catmullRomSpline(locations);
+    if (validLocs.length >= 2) {
+      const spline = catmullRomSpline(validLocs);
       layers.ghostLine = L.polyline(spline, {
         color: '#0047AB', weight: 1, dashArray: '4 8', opacity: 0.15, interactive: false,
       }).addTo(map);
     }
 
-    if (visibleCount >= 2) {
-      const spline = catmullRomSpline(locations.slice(0, visibleCount));
+    if (validVisible.length >= 2) {
+      const spline = catmullRomSpline(validVisible);
       layers.routeLine = L.polyline(spline, {
         color: '#b8101c', weight: 2, dashArray: '6 4', opacity: 0.7,
         lineCap: 'round', lineJoin: 'round', interactive: false,
@@ -182,9 +210,9 @@ export default function TripDetail() {
       layers.routeLine = null;
     }
 
-    locations.forEach((loc, i) => {
+    validLocs.forEach((loc, i) => {
       const revealed = i < visibleCount;
-      const isActive = i === activeIdx;
+      const isActive = locations.indexOf(loc) === activeIdx;
       const size = isActive ? 10 : 7;
       const icon = L.divIcon({
         className: 'td-leaflet-marker',

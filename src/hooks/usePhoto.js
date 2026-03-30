@@ -49,7 +49,7 @@ export function getPhotoById(data, photoId) {
   if (!data?.trips) return null;
   for (const trip of data.trips) {
     const photo = trip.photos.find(p => p.id === photoId);
-    if (photo) return { photo, trip: trip.trip };
+    if (photo) return { photo, trip: trip.trip, locations: trip.locations };
   }
   return null;
 }
