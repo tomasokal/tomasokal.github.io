@@ -12,7 +12,8 @@
     "coverPhotoId": "DL005"
   },
   "locations": [
-    { "name": "East Bluff", "lat": 43.429, "lng": -89.729, "order": 0 }
+    { "name": "East Bluff", "lat": 43.429, "lng": -89.729, "order": 0 },
+    { "name": "Merrimac", "lat": 43.399, "lng": -89.652, "order": 1 }
   ],
   "photos": [
     {
@@ -54,6 +55,22 @@
       "location": "East Bluff",
       "date": "2026-05-02T11:15:00.000Z",
       "exif": { "camera": "Fujifilm X-T200", "lens": "Super-Takumar 50mm f/1.4", "focalLength": 50, "aperture": "f/0.0", "shutterSpeed": "1/350", "iso": 200 }
+    },
+    {
+      "id": "DL006",
+      "title": "Horse in Field",
+      "description": "A horse grazing in a field at Merrimac.",
+      "location": "Merrimac",
+      "date": "2026-05-02T11:15:00.000Z",
+      "exif": { "camera": "Fujifilm X-T200", "lens": "Super-Takumar 135mm f/3.5", "focalLength": 135, "aperture": "f/0.0", "shutterSpeed": "1/75", "iso": 250 }
+    },
+    {
+      "id": "DL007",
+      "title": "Bird",
+      "description": "A bird perched on a branch at Merrimac.",
+      "location": "Merrimac",
+      "date": "2026-05-02T11:15:00.000Z",
+      "exif": { "camera": "Fujifilm X-T200", "lens": "Super-Takumar 135mm f/3.5", "focalLength": 135, "aperture": "f/0.0", "shutterSpeed": "1/1300", "iso": 200 }
     }
   ]
 }
