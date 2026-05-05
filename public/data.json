@@ -356,7 +356,109 @@
           }
         }
       ]
+    },
+    {
+      "trip": {
+        "id": "devils-lake-2026",
+        "title": "Devil's Lake Bouldering Trip",
+        "description": "Exploring the bouldering spots around Devil's Lake.",
+        "startDate": "2026-05-02",
+        "endDate": "2026-05-03",
+        "location": {
+          "name": "Devil's Lake",
+          "center": [
+            43.4141,
+            -89.7202
+          ]
+        },
+        "coverPhotoId": "DL005"
+      },
+      "locations": [
+        {
+          "name": "East Bluff",
+          "lat": 43.429,
+          "lng": -89.729,
+          "order": 0
+        }
+      ],
+      "photos": [
+        {
+          "id": "DL001",
+          "title": "Haunting Warmup V0",
+          "description": "Haunting Warmup V0 boulder problem on the East Bluff at Devil's Lake.",
+          "location": "East Bluff",
+          "date": "2026-05-02T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/350",
+            "iso": 200
+          }
+        },
+        {
+          "id": "DL002",
+          "title": "Haunting Warmup V0",
+          "description": "Haunting Warmup V0 boulder problem on the East Bluff at Devil's Lake.",
+          "location": "East Bluff",
+          "date": "2026-05-02T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/350",
+            "iso": 200
+          }
+        },
+        {
+          "id": "DL003",
+          "title": "Haunting Warmup V0",
+          "description": "Haunting Warmup V0 boulder problem on the East Bluff at Devil's Lake.",
+          "location": "East Bluff",
+          "date": "2026-05-02T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/350",
+            "iso": 200
+          }
+        },
+        {
+          "id": "DL004",
+          "title": "Haunting Warmup V0",
+          "description": "Haunting Warmup V0 boulder problem on the East Bluff at Devil's Lake.",
+          "location": "East Bluff",
+          "date": "2026-05-02T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/350",
+            "iso": 200
+          }
+        },
+        {
+          "id": "DL005",
+          "title": "Haunting Warmup V0",
+          "description": "Haunting Warmup V0 boulder problem on the East Bluff at Devil's Lake.",
+          "location": "East Bluff",
+          "date": "2026-05-02T11:15:00.000Z",
+          "exif": {
+            "camera": "Fujifilm X-T200",
+            "lens": "Super-Takumar 50mm f/1.4",
+            "focalLength": 50,
+            "aperture": "f/0.0",
+            "shutterSpeed": "1/350",
+            "iso": 200
+          }
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-03-30T14:26:04.079Z"
+  "generatedAt": "2026-05-05T03:15:40.118Z"
 }
